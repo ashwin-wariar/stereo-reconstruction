@@ -132,7 +132,6 @@ def dense_match(img1, img2, descriptors1, descriptors2):
     return disparity
 
 
-# PROVIDED functions
 def compute_camera_pose(F, K):
     E = K.T @ F @ K
     R_1, R_2, t = cv2.decomposeEssentialMat(E)
